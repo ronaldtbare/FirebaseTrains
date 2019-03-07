@@ -1,0 +1,16 @@
+body{
+    background-color: gray;
+}
+
+.jumbotron{
+    background-image: url("/images/train2.png");
+    background-color: #464545;
+}
+
+.whiteText{
+    color:white;
+}
+
+.centerText{
+    text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Firebase Train Scheduler</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+     <!-- Added Moment JS -->
+     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+ <div class="container"> 
+        <div class="jumbotron">
+                <h1 class="whiteText centerText display-4">Firebase Train Scheduler</h1>
+                <p class="whiteText centerText lead">Up-to-date Train Schedules</p>
+                <hr class="my-4">
+               
+              </div> 
+
+     <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    Current Train Schedule
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency(min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            
+                            <td>Everitt Express</td>
+                            <td>Chicago</td>
+                            <td>24</td>
+                            <td>calculated</td>
+                            <td>120</td>
+                            
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                  
+                </div>
+              </div>
+        </div>
+       
+    </div>         
+    
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    Add Train
+                </div>
+                <div class="card-body">
+                        <form>
+                                <div class="form-group">
+                                  <label for="trainName">Train Name</label>
+                                  <input type="text" class="form-control" id="trainName" placeholder="name">
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label for="destination">Destination</label>
+                                        <input type="text" class="form-control" id="destination" placeholder="destination">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="firstTrainTime">First Train Time (HH:mm military time)</label>
+                                        <input type="text" class="form-control" id="firstTrainTime" placeholder="time">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="frequency">Frequency (min)</label>
+                                        <input type="text" class="form-control" id="frequency" placeholder="frequency">
+                                </div>
+                                <a href="#" class="btn btn-primary">Submit</a>
+                                
+                              </form>
+                  
+                  
+                </div>
+              </div>
+        </div>
+
+    </div>
+    
+</div>  
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+  
+</body>
+
+</html>
