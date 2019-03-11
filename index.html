@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>Firebase Train Scheduler</title>
-
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-     <!-- Added Moment JS -->
-     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+     
 </head>
 
 <body>
@@ -42,11 +41,11 @@
                         <tbody>
                           <tr>
                             
-                            <td>Everitt Express</td>
+                            <!-- <td>Everitt Express</td>
                             <td>Chicago</td>
                             <td>24</td>
                             <td>calculated</td>
-                            <td>120</td>
+                            <td>120</td> -->
                             
                           </tr>
                          
@@ -67,7 +66,7 @@
                     Add Train
                 </div>
                 <div class="card-body">
-                        <form>
+                        <form id="inputForm">
                                 <div class="form-group">
                                   <label for="trainName">Train Name</label>
                                   <input type="text" class="form-control" id="trainName" placeholder="name">
@@ -87,9 +86,10 @@
                                         <label for="frequency">Frequency (min)</label>
                                         <input type="text" class="form-control" id="frequency" placeholder="frequency">
                                 </div>
-                                <a href="#" class="btn btn-primary">Submit</a>
+                                <input type="submit">
                                 
-                              </form>
+                                
+                          </form>
                   
                   
                 </div>
@@ -98,10 +98,28 @@
 
     </div>
     
-</div>  
+</div>
+
+
+  
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCwXy9YLU4rFH3_fTkuXGyXFZCTPGupSCE",
+    authDomain: "trains-352ec.firebaseapp.com",
+    databaseURL: "https://trains-352ec.firebaseio.com",
+    projectId: "trains-352ec",
+    storageBucket: "",
+    messagingSenderId: "445397969608"
+  };
+  firebase.initializeApp(config);
+</script>
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Added Moment JS -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="/js/main.js"></script>
   
 </body>
