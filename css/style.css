@@ -3,7 +3,7 @@ body{
 }
 
 .jumbotron{
-    background-image: url("/images/train2.png");
+    background-image: url("images/train2.png");
     background-color: #464545;
 }
 
