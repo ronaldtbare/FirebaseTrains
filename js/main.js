@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   console.log("ready!");
 
   var database = firebase.database().ref('trains');
